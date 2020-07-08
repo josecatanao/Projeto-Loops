@@ -1,3 +1,7 @@
+<?php
+    require 'arquivos/config/classes.php';
+    $participantes=$banco->mostraParticipantes();     
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,57 +14,34 @@
 </head>
 <body>
 
-       <h1 class="titulo">AMIGO SECRETO LOOPIS</h1>
-  
-    <div class="tudo">
+    <h1 class="titulo">AMIGO SECRETO LOOPIS</h1>
+   
+     <div class="tudo">
     
-    <img class="img" src="arquivos/fotos/foto.svg" alt="">
-    <p>Nenhum participante adicionado.</p>
 
-     <!--
-    <h3>OBS: o amigo secreto só pode ocorrer com no mínimo 3 pessoas.</h3> 
-     <div class="bloco-participantes">
-
-        <div class="participante">
-            <div class="nome">
-                <p>Ricart</p>
-               <a href="" style="color:#FF6B35;"><i  class="fas fa-trash-alt"></i></a>
-               <a href=""><i class="fas fa-pen"></i></a> 
-            </div>
-            <p>ricart@email.com</p>
+        <?php if(count($participantes)==0){ ?> 
+            <img class="img" src="arquivos/fotos/foto.svg" alt="">
+            <p>Nenhum participante adicionado.</p>
+            <a class="btn" href="addparticipante.php">ADICIONAR</a>
+        <?php } else{ ?>
+        <h3>OBS: o amigo secreto só pode ocorrer com no mínimo 3 pessoas.</h3> 
+         <div class="bloco-participantes">
+          <?php foreach ( $participantes as $key => $value) { ?>
+                    <div class="participante">
+                        <div class="nome">
+                            <p><?=$value['nome'];?></p>
+                           <a href="" style="color:#FF6B35;"><i  class="fas fa-trash-alt"></i></a>
+                           <a href=""><i class="fas fa-pen"></i></a> 
+                        </div>
+                        <p><?=$value['email'];?></p>
+                    </div>
+         <?php } ?>
         </div>
 
-
-         <div class="participante">
-            <div class="nome">
-                <p>Ricart</p>
-               <a href="" style="color:#FF6B35;"><i  class="fas fa-trash-alt"></i></a>
-               <a href=""><i class="fas fa-pen"></i></a> 
-            </div>
-            <p>ricart@email.com</p>
-        </div>
-
-
-        <div class="participante">
-            <div class="nome">
-                <p>Ricart</p>
-               <a href="" style="color:#FF6B35;"><i  class="fas fa-trash-alt"></i></a>
-               <a href=""><i class="fas fa-pen"></i></a> 
-            </div>
-            <p>ricart@email.com</p>
-        </div>
-
-
-
-
-
-         
-     </div>
-     <a class="btn" href="addparticipante.html">SORTEAR</a>
-         -->   
-    <a class="btn" href="addparticipante.html">ADICIONAR</a>
+        <a class="btn" href="addparticipante.php">SORTEAR</a>
+        <a class="btn" href="addparticipante.php">ADICIONAR</a>
+     <?php } ?>     
     </div>
-
 
 
        

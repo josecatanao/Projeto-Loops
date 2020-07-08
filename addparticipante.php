@@ -10,11 +10,11 @@
     <section class="container">
         <div class="bloco-principal">
              <h1 class="titulo">AMIGO SECRETO LOOPIS</h1>
-             <form action="">
+             <form method="post" action="arquivos/config/validacadastro.php">
                 <label for="nome">Nome</label>
-                <input type="text" name="" id="nome">
+                <input type="text" name="nome" id="nome">
                 <label for="email">Email</label>
-                <input type="email" name="" id="email">
+                <input type="email" name="email" id="email">
                 <button class="btnform" type="submit">CADASTRAR</button>
                 <button class="btnform"type="submit">CADASTRAR E ADICIONAR OUTRO</button>
             </form>
