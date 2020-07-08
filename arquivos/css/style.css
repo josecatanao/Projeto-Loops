@@ -1,0 +1,236 @@
+/*tudo*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+/*fim tudo*/
+
+
+
+
+
+
+/*mini biblioteca*/
+    /*titulos*/
+      .titulo{
+         color:#004E89;
+         font-weight: bold;
+         font-size: 37px;
+         margin-top: 65px;
+         text-align: center;
+      }
+
+    .titulo-alert{
+        color:#004E89;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+    }
+    /*fim titulos*/
+
+    /*botões*/
+    .btn{
+        text-decoration: none;
+        width: 220px;
+        height: 50px;
+        background-color: #004E89;
+        border-radius: 4px;
+        color: white;
+        font-size: 18px;
+        float: right;
+        text-align: center;
+        line-height: 50px;
+        font-weight: bold;
+        border: none;
+
+    }
+     .btncenter{
+        text-decoration: none;
+        width: 220px;
+        height: 50px;
+        background-color: #004E89;
+        border-radius: 4px;
+        color: white;
+        margin: 40px auto;
+        display: block;
+        font-size: 18px;
+        text-align: center;
+        line-height: 50px;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+
+    }
+
+    .btnform{
+        text-decoration: none;
+        width: 450px;
+        height: 57px;
+        background-color: #004E89;
+        border-radius: 4px;
+        color: white;
+        font-size: 18px;
+        float: left;
+        text-align: center;
+        line-height: 50px;
+        font-weight: bold;
+        display: block;
+        border: none;
+        margin-bottom: 17px;
+        cursor: pointer;
+    }
+
+    .btnalert{
+         text-decoration: none;
+         width: 220px;
+         height: 50px;
+         background-color: #FF6B35;
+         border-radius: 4px;
+         color: white;
+         font-size: 18px;
+         float: left;
+         text-align: center;
+         line-height: 50px;
+         font-weight: bold;
+    }
+    
+    /*fim botões*/
+
+    /*imagens*/
+        .img{
+            width: 450px;
+            height: 380px;
+            margin: 0 auto;
+            margin-top: 30px;
+            display: inline-block;
+            
+        }
+    /*fim imagens*/
+
+/*fim mini biblioteca*/
+
+
+
+
+
+
+
+
+/*page1*/
+    .tudo{
+        margin-top:30px; 
+        width: 100%;
+        text-align: center;
+        margin-bottom: ;
+      
+    }
+     .tudo>p{
+        font-size: 18px;
+        font-weight: bold;
+     }
+     .tudo>a{
+       margin-right: 100px;
+       margin-left:-80px;
+       margin-top: 20px;
+     }
+      .tudo>h3{
+        width: 80%;
+        text-align: start;
+        margin: 80px auto 0px auto;
+
+        color: #FF6B35;
+       
+      }
+
+
+
+      .bloco-participantes{
+        width:80%;
+        margin: 1px auto 100px auto;
+        display: flex;
+       justify-content: start;
+        flex-wrap: wrap;
+       
+      }
+
+      .participante{
+        width: 300px;
+        height: 130px;
+        border: 1px solid  #F5F5F5;
+        background:  #F5F5F5;
+        text-align: start;
+        margin: 20px 20px 20px 20px;
+  
+
+      }
+      .nome{
+        width: 250px;
+        margin-left: 25px;
+        margin: 19px auto;
+        
+      }
+      .nome p{
+        display: inline; 
+        font-weight: bold;
+        font-size: 25px;
+        color: rgba(0, 0, 0, 0.9);
+      }
+      .nome>a{
+        float: right;
+        margin-left: 15px;
+        line-height: 27px; 
+        text-decoration: none;
+        color: black
+      }
+      .participante>p{
+        margin-left: 25px;
+        font-size: 20px;
+        width: 100%;
+
+      }
+/*fim page1*/
+
+
+
+
+/*page2*/
+    .container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bloco-principal{
+        width: 500px;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+     .bloco-principal>h1{
+        margin-bottom: 60px;
+     }
+      .bloco-principal>form{
+        width: 450px;
+      }
+    .bloco-principal>form>label{
+        display: block;
+        font-size: 20px;
+        font-weight: bolder;
+        margin-bottom: 25px;
+    }
+     .bloco-principal>form>input{
+        display: block;
+        margin-bottom: 25px;
+        width: 450px;
+        height: 53px;
+        border: 2px solid grey;
+        font-size: 20px;
+    }
+    
+/*fim page2*/
