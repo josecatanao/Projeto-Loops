@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+<?php 
+    require 'arquivos/config/classes.php';
+    $participantes=$banco->pegarParticipanteEditar($_GET['id']);
+
+ ?>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -10,13 +15,16 @@
     <section class="container">
         <div class="bloco-principal">
              <h1 class="titulo">AMIGO SECRETO LOOPIS</h1>
-             <form action="">
+               <?php foreach ($participantes as $key => $value) { ?>
+             <form method="post" action="arquivos/config/validaeditar.php">
+                <input  name="id" value="<?=$value['id'];?>" style="display: none;"> 
                 <label for="nome">Nome</label>
-                <input type="text" name="" id="nome">
+                <input type="text" name="nome" value="<?=$value['nome'];?>" id="nome">
                 <label for="email">Email</label>
-                <input type="email" name="" id="email">
+                <input type="email" name="email" value="<?=$value['email'];?>" id="email">
                <button class="btncenter" type="submit">SALVAR</button> 
             </form>
+                <?php } ?>
         </div>
     </section>
 </body>

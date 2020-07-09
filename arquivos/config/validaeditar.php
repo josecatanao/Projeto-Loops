@@ -6,6 +6,6 @@ $email=filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING);
 if(empty($nome) || empty($email)){
       header("Location:../alertas/alertalogin.php");
 }else{
-    $banco->adicionarParticipante($nome,$email);
+    $banco->editarParticipante($_POST['id'],$nome,$email);
      header("Location:../alertas/salvocomsucesso.php");
 }

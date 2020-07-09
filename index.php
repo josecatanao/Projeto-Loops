@@ -30,8 +30,8 @@
                     <div class="participante">
                         <div class="nome">
                             <p><?=$value['nome'];?></p>
-                           <a href="" style="color:#FF6B35;"><i  class="fas fa-trash-alt"></i></a>
-                           <a href=""><i class="fas fa-pen"></i></a> 
+                           <a href="arquivos/alertas/desejaexcluir.php?id=<?=$value['id'];?>" style="color:#FF6B35;"><i  class="fas fa-trash-alt"></i></a>
+                           <a href="editarparticipante.php?id=<?=$value['id'];?>"><i class="fas fa-pen"></i></a> 
                         </div>
                         <p><?=$value['email'];?></p>
                     </div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +13,8 @@
     <div class="tudo">
         <div class="bloco">
             <h1>AMIGO SECRETO LOOPIS</h1>
-            <p>Excluido com sucesso!</p>
-            <a class="btn" href="../../index.php">OK</a>
+            <p class="alerta">Login ou Senha Invalido!</p>
+            <a class="btn" href="../../addparticipante.php">OK</a>
         </div>
     </div>
 
