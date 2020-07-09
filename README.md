@@ -7,7 +7,7 @@
  	create database loops;
    	use loops;
 
-	CREATE table publicacao(
+	CREATE table participantes(
 	id int not null AUTO_INCREMENT PRIMARY KEY,
     nome varchar(200),
     email varchar(800)
