@@ -38,7 +38,7 @@
          <?php } ?>
         </div>
 
-        <a class="btn" href="addparticipante.php">SORTEAR</a>
+        <a class="btn" href="sorteio.php">SORTEAR</a>
         <a class="btn" href="addparticipante.php">ADICIONAR</a>
      <?php } ?>     
     </div>
