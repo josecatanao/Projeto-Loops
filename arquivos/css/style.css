@@ -148,10 +148,10 @@
 
 
       .bloco-participantes{
-        width:80%;
+        width:95%;
         margin: 1px auto 100px auto;
         display: flex;
-       justify-content: start;
+         justify-content: center;
         flex-wrap: wrap;
        
       }
