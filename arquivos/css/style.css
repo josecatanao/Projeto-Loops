@@ -229,8 +229,11 @@
         margin-bottom: 25px;
         width: 450px;
         height: 53px;
+        padding-left: 2px;
         border: 2px solid grey;
         font-size: 20px;
+        color: black;
+       
     }
     
 /*fim page2*/

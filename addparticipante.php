@@ -15,8 +15,8 @@
                 <input type="text" name="nome" id="nome">
                 <label for="email">Email</label>
                 <input type="email" name="email" id="email">
-                <button class="btnform" type="submit">CADASTRAR</button>
-                <button class="btnform"type="submit">CADASTRAR E ADICIONAR OUTRO</button>
+                <button class="btnform" value="1" name="button" type="submit">CADASTRAR</button>
+                <button class="btnform" value="2" name="button" type="submit">CADASTRAR E ADICIONAR OUTRO</button>
             </form>
         </div>
     </section>
