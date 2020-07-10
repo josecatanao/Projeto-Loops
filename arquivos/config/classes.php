@@ -37,7 +37,7 @@
         $res->execute();
       }
 
-      // SELECIONAR PARTECEPANTES PARA MOSTRA E EDITAR
+      // SELECIONAR PARTICIPANTES PARA MOSTRA E EDITAR
         public function pegarParticipanteEditar($id){
             $res = $this->conexao()->prepare("SELECT * FROM Participantes WHERE id = :id");
             $res->bindValue(":id",$id);
@@ -46,7 +46,7 @@
             return $resistros;
         }
 
-       //EXCLUIR PARTECEPANTE
+       //EXCLUIR PARTICIPANTES
         public function excluirParticipante($id){
              $res = $this->conexao()->prepare("DELETE FROM Participantes WHERE id = :id");
              $res->bindValue(":id",$id);
