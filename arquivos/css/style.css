@@ -163,6 +163,7 @@
         border: 1px solid  #F5F5F5;
         background:  #F5F5F5;
         text-align: start;
+        word-break: break-word;
         margin: 20px 20px 20px 20px;
   
 
@@ -174,9 +175,11 @@
         
       }
       .nome p{
+        width: 80%;
         display: inline; 
         font-weight: bold;
         font-size: 25px;
+        word-break: break-word;
         color: rgba(0, 0, 0, 0.9);
       }
       .nome>a{
@@ -189,8 +192,8 @@
       .participante>p{
         margin-left: 25px;
         font-size: 20px;
-        width: 100%;
-
+        width: 90%;
+        word-break: break-word;
       }
 /*fim page1*/
 
