@@ -13,7 +13,7 @@
     	email varchar(800)
   	);
 	
-# Vídeo de Executar o Projeto:
+# Vídeo De Como Executar o Projeto:
 	
 	https://youtu.be/KattywKAnhc
 
