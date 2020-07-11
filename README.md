@@ -15,5 +15,6 @@
 	
 # Como Executar o Projeto:
 	
-	https://youtu.be/KattywKAnhc=<VIDEO ID>
+	https://youtu.be/KattywKAnhc<VIDEO ID>
+	https://youtu.be/KattywKAnhc<VIDEO URL>
 
